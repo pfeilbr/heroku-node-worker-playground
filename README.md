@@ -19,7 +19,12 @@ cd heroku-node-worker-playground
 # create heroku app
 heroku create
 
-# make changes to `worker.js`, commit, then ->
+# >>> make changes to `worker.js`, install packages, etc.
+
+# commit changes
+git commit -a -m "my awesome changes"
+
+# deploy / push changes to heroku
 git push heroku master # if worker is already running, this push will kill it and start the new one
 
 # run worker only / stop web dyno
