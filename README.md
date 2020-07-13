@@ -41,3 +41,4 @@ heroku ps:scale worker=1
 ## Resources
 
 * [Background Jobs in Node.js with Redis](https://devcenter.heroku.com/articles/node-redis-workers)
+* [Run Non-web Java Dynos on Heroku](https://devcenter.heroku.com/articles/run-non-web-java-processes-on-heroku)
