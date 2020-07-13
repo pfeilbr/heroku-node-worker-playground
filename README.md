@@ -21,6 +21,9 @@ heroku create
 
 # >>> make changes to `worker.js`, install packages, etc.
 
+# test locally
+npm run worker
+
 # commit changes
 git commit -a -m "my awesome changes"
 
