@@ -13,12 +13,19 @@
     <h3>heroku | worker demo</h3>
     <pre>
     <code>
-      # clone, make changes, commit, then ->
-      git push heroku master
+      # clone
+      git clone https://github.com/pfeilbr/heroku-node-worker-playground.git
       
-      # if worker is already running, this push will kill it and start the new one
+      # change to root directory
+      cd heroku-node-worker-playground
       
-      # run worker only
+      # create heroku app
+      heroku create
+      
+      # make changes to `worker.js`, commit, then ->
+      git push heroku master # if worker is already running, this push will kill it and start the new one
+      
+      # run worker only / stop web dyno
       heroku ps:scale web=0 worker=1
       
       # verify running
@@ -31,7 +38,7 @@
       heroku ps:scale worker=0
       
       # start worker
-      heroku ps:scale worker=1      
+      heroku ps:scale worker=1
     </code>
   </pre>
 

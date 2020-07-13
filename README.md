@@ -1,6 +1,6 @@
 # heroku-node-worker-playground
 
-example of running a long lived worker process on heroku
+example of running a long lived worker process on heroku that is not a web app/server
 
 ## Prerequisites
 
