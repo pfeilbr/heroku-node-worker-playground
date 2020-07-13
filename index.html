@@ -1,0 +1,38 @@
+<!<!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>heroku | worker demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="client.js" async></script>
+  </head>
+
+  <body>
+    <h3>heroku | worker demo</h3>
+    <pre>
+    <code>
+      # clone, make changes, commit, then ->
+      git push heroku master
+      
+      # if worker is already running, this push will kill it and start the new one
+      
+      # run worker only
+      heroku ps:scale web=0 worker=1
+      
+      # verify running
+      heroku ps
+      
+      # view logs
+      heroku logs -t
+      
+      # stop worker
+      heroku ps:scale worker=0
+      
+      # start worker
+      heroku ps:scale worker=1      
+    </code>
+  </pre>
+
+  </html>
