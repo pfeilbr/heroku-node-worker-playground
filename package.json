@@ -8,5 +8,7 @@
     "express": "^4.16.4",
     "foreman": "^3.0.1"
   },
-  "scripts": {}
+  "scripts": {
+    "worker": "node worker.js"
+  }
 }
